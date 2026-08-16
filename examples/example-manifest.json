@@ -1,0 +1,112 @@
+{
+  "_note": "A filled LOW-risk example. It passes `manifest_check.py --stage design` and `--stage release`. Copy assets/constraint-manifest.template.json for real work; this file is here so you can see what 'complete' looks like.",
+  "schema_version": 1,
+  "project": {
+    "name": "usb-env-logger",
+    "revision": "RevA",
+    "entry": "NEW_DESIGN",
+    "route": "pcb-only",
+    "state": "TOOL_VERIFIED",
+    "approved_netlist_baseline": "evidence/run3/netlist.xml",
+    "approved_netlist_sha256": "3f1a0c9d2b7e4f5061728394a5b6c7d8e9f0112233445566778899aabbccddee",
+    "additional_source_files": [
+      "libraries/project.kicad_sym",
+      "libraries/project.pretty/SENSOR_LGA6.kicad_mod",
+      "mechanical/enclosure-cutouts.pdf"
+    ]
+  },
+  "board": {
+    "manufacturer": "JLCPCB",
+    "technology": "rigid_fr4",
+    "copper_layers": 2,
+    "copper_layer_names": ["F.Cu", "B.Cu"],
+    "stackup_role": ["signal_and_components", "ground_with_short_signal_jumps"],
+    "placement_area_mm": [48.0, 28.0],
+    "edge_margin_mm": 1.0,
+    "physical_outline_mm": [50.0, 30.0],
+    "thickness_mm": 1.6,
+    "outer_copper_oz": 1,
+    "inner_copper_oz": null,
+    "surface_finish": "HASL",
+    "soldermask_color": "green",
+    "silkscreen_color": "white",
+    "product_outline_separate_from_panel": true
+  },
+  "dfm": {
+    "source": "https://jlcpcb.com/capabilities/pcb-capabilities",
+    "checked_on": "2026-08-02",
+    "min_track_mm": 0.15,
+    "min_clearance_mm": 0.15,
+    "min_drill_mm": 0.3,
+    "via_drill_mm": 0.3,
+    "via_pad_mm": 0.6,
+    "copper_to_edge_mm": 0.5
+  },
+  "assembly": {
+    "quantity": 5,
+    "sides": [],
+    "dnp_designators": ["C9", "R11"],
+    "excluded_designators": [],
+    "cpl_units": "mm",
+    "cpl_origin": "board lower-left corner of Edge.Cuts"
+  },
+  "special_processes": [],
+  "panel": {
+    "required": false,
+    "notes": "Single boards. If a rail is added later it is separate geometry, never merged into Edge.Cuts."
+  },
+  "risk": {
+    "tier": "LOW",
+    "reason": "USB-powered desk logger. No battery charging, no mains, no human contact, no RF module, no motor, no safety function. Worst case 180 mA at 5 V.",
+    "human_contact": false,
+    "battery_charging": false,
+    "mains_voltage": false,
+    "high_energy": false,
+    "safety_function": false,
+    "controlled_impedance": false,
+    "hdi_or_bga": false
+  },
+  "feasibility": {
+    "tier": "AGENT_AUTONOMOUS",
+    "assessed_on": "2026-08-02",
+    "reason": "2 layers, USB powered, 0.18 A peak, 52 parts, all with verified library footprints, no hard gate and no escalator. The agent runs the workflow; the human inspects the Gerbers and orders.",
+    "factors": {
+      "flex_or_rigid_flex": false,
+      "rf_antenna_design": false,
+      "high_speed_digital": false,
+      "rf_module_precertified": false,
+      "custom_switching_converter": false,
+      "motor_or_inductive_load": false,
+      "enclosure_fit_required": false,
+      "nonstandard_parts": false,
+      "harsh_environment": false,
+      "respin_not_acceptable": false,
+      "peak_current_a": 0.18,
+      "component_count_estimate": 52
+    }
+  },
+  "approvals": {
+    "topology_review": {
+      "reviewer_is_human": false,
+      "name": null,
+      "role": null,
+      "date": null,
+      "evidence": null
+    },
+    "package_release_review": {
+      "reviewer_is_human": false,
+      "name": null,
+      "role": null,
+      "date": null,
+      "evidence": null,
+      "package_sha256": null
+    }
+  },
+  "waivers": [],
+  "unknowns": [],
+  "gates": {
+    "allow_drc_violations": 0,
+    "allow_unconnected": 0,
+    "allow_schematic_parity_issues": 0
+  }
+}

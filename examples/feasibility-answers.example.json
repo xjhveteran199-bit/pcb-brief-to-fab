@@ -1,0 +1,32 @@
+{
+  "_comment": "Input for scripts/feasibility.py. Every key is optional; anything absent counts as 'not declared'. Only literal true counts as declared — a string like \"yes\" does not. Unrecognised keys are reported, never silently used. Run: python scripts/feasibility.py examples/feasibility-answers.example.json",
+
+  "_hard_gates_any_one_forces_HUMAN_LED": null,
+  "human_contact": false,
+  "battery_charging": false,
+  "mains_voltage": false,
+  "high_energy": false,
+  "safety_function": false,
+  "controlled_impedance": false,
+  "hdi_or_bga": false,
+  "flex_or_rigid_flex": false,
+  "rf_antenna_design": false,
+  "high_speed_digital": false,
+
+  "_escalators_any_one_forces_at_least_AGENT_LED": null,
+  "rf_module_precertified": false,
+  "custom_switching_converter": false,
+  "motor_or_inductive_load": false,
+  "enclosure_fit_required": false,
+  "nonstandard_parts": false,
+  "harsh_environment": false,
+  "respin_not_acceptable": false,
+
+  "_numeric_thresholds": null,
+  "copper_layers": 2,
+  "peak_current_a": 0.18,
+  "component_count_estimate": 52,
+  "route": "pcb-only",
+
+  "notes": "USB-powered desk environment logger. Result for these answers: AGENT_AUTONOMOUS. Set battery_charging to true and rerun to see it become HUMAN_LED."
+}

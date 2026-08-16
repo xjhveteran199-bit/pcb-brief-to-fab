@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "project": {
+    "name": "REPLACE_ME",
+    "revision": "RevA",
+    "entry": "NEW_DESIGN",
+    "route": "pcb-only",
+    "state": "DRAFT",
+    "approved_netlist_baseline": null,
+    "approved_netlist_sha256": null,
+    "additional_source_files": []
+  },
+  "board": {
+    "manufacturer": "UNKNOWN",
+    "technology": "rigid_fr4",
+    "copper_layers": 2,
+    "copper_layer_names": ["F.Cu", "B.Cu"],
+    "stackup_role": ["signal", "ground_and_signal"],
+    "placement_area_mm": [48.0, 28.0],
+    "edge_margin_mm": 1.0,
+    "physical_outline_mm": [50.0, 30.0],
+    "thickness_mm": 1.6,
+    "outer_copper_oz": 1,
+    "inner_copper_oz": null,
+    "surface_finish": "HASL",
+    "soldermask_color": "green",
+    "silkscreen_color": "white",
+    "product_outline_separate_from_panel": true
+  },
+  "dfm": {
+    "source": "UNKNOWN",
+    "checked_on": null,
+    "min_track_mm": 0.15,
+    "min_clearance_mm": 0.15,
+    "min_drill_mm": 0.3,
+    "via_drill_mm": 0.3,
+    "via_pad_mm": 0.6,
+    "copper_to_edge_mm": 0.5
+  },
+  "assembly": {
+    "quantity": 5,
+    "sides": [],
+    "dnp_designators": [],
+    "excluded_designators": [],
+    "cpl_units": "mm",
+    "cpl_origin": ""
+  },
+  "special_processes": [],
+  "panel": {
+    "required": false,
+    "notes": ""
+  },
+  "risk": {
+    "tier": "LOW",
+    "reason": "REPLACE_ME",
+    "human_contact": false,
+    "battery_charging": false,
+    "mains_voltage": false,
+    "high_energy": false,
+    "safety_function": false,
+    "controlled_impedance": false,
+    "hdi_or_bga": false
+  },
+  "feasibility": {
+    "tier": "AGENT_AUTONOMOUS",
+    "assessed_on": null,
+    "reason": "REPLACE_ME — name the specific fact that drove the tier",
+    "factors": {
+      "flex_or_rigid_flex": false,
+      "rf_antenna_design": false,
+      "high_speed_digital": false,
+      "rf_module_precertified": false,
+      "custom_switching_converter": false,
+      "motor_or_inductive_load": false,
+      "enclosure_fit_required": false,
+      "nonstandard_parts": false,
+      "harsh_environment": false,
+      "respin_not_acceptable": false,
+      "peak_current_a": null,
+      "component_count_estimate": null
+    }
+  },
+  "approvals": {
+    "topology_review": {
+      "reviewer_is_human": false,
+      "name": null,
+      "role": null,
+      "date": null,
+      "evidence": null
+    },
+    "package_release_review": {
+      "reviewer_is_human": false,
+      "name": null,
+      "role": null,
+      "date": null,
+      "evidence": null,
+      "package_sha256": null
+    }
+  },
+  "waivers": [],
+  "unknowns": [
+    {
+      "item": "REPLACE_ME or delete this entry",
+      "why": "",
+      "owner": "",
+      "interim": ""
+    }
+  ],
+  "gates": {
+    "allow_drc_violations": 0,
+    "allow_unconnected": 0,
+    "allow_schematic_parity_issues": 0
+  }
+}
