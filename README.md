@@ -96,3 +96,7 @@ that review happens before the schematic freezes.
 
 Requires Python 3 for the scripts and KiCad (with `kicad-cli`) for the ERC/DRC and
 export gates.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
