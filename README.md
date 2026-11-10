@@ -1,5 +1,7 @@
 # pcb-brief-to-fab
 
+> **No longer maintained.** This repository has been superseded by FabGate-esp32 (a private repository) and is archived. / 已被 FabGate-esp32（私有仓库）取代，不再维护。
+
 A Claude skill that turns a plain-language hardware brief into a traceable engineering
 candidate — and, only after every gate passes on the exact file hashes, into a
 fabrication package.
